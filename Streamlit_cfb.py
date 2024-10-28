@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[28]:
+# In[32]:
 
 
 import streamlit as st
@@ -9,8 +9,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import os
 #%pip install pipreqs
-import pipreqs
-#pipreqs > "C:/Users/Lucas/OneDrive/python/College football/Streamlit application/requirements.txt"
+pipreqs r"C:/Users/Lucas/OneDrive/python/College football/Streamlit application"
 
 week = 10
 
