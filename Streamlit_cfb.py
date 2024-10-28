@@ -1,38 +1,34 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[33]:
+# In[34]:
 
 
-import pandas as pd
-import plotly.graph_objects as go
-import os
 import streamlit as st
-#%pip freeze > requirements.txt
+import pandas as pd
+import os
 
-# Set up Dash app
-app = dash.Dash(__name__)
-app.title = f"Week {10} Games and Predictions"
-
-
-# In[6]:
+# Set the week number
+week = 10
 
 
-#Set up directory, read in week
+# In[35]:
+
+
+# Set up directory and read in the data
 current_dir = os.path.dirname(__file__)
 data_path = os.path.join(current_dir, 'data', f'Week {week}_no_outcomes.xlsx')
 
-#get list of games
-list_of_games = []
-for home, away in zip(df['home_team'],df['away_team']):
-    list_of_games.append(f"{away} @ {home}")
+# Load data
+df = pd.read_excel(data_path)
 
-df['game_for_list'] = list_of_games
+# Generate list of games
+df['game_for_list'] = [f"{away} @ {home}" for home, away in zip(df['home_team'], df['away_team'])]
 
-#Page title
+# Page title
 st.title(f'Week {week} games and predictions')
 
-#Selection box to choose game
+# Selection box to choose game
 selected_game = st.selectbox('Game: ', df['game_for_list'])
 
 
