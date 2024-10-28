@@ -33,6 +33,12 @@ st.title(f'Week {week} games and predictions')
 selected_game = st.selectbox('Game: ', df['game_for_list'])
 
 
+# In[7]:
+
+
+get_ipython().run_line_magic('pip', 'freeze > requirements.txt')
+
+
 # In[ ]:
 
 
