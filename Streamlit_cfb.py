@@ -41,12 +41,14 @@ selected_game = st.selectbox('Game: ', df['game_for_list'])
 
 
 #To push a file to github via pycharm terminal
-"""
+
+'''
+cd "C:\Users\Lucas\OneDrive\python\College football\Streamlit application"
 git init
 git remote remove origin
 git remote add origin https://github.com/lmisera/cfb_predictions
-git add "C:\Users\Lucas\OneDrive\python\College football\Streamlit application\Streamlit_cfb.py"
+git add "C:\Users\Lucas\OneDrive\python\College football\Streamlit application"
 git commit -m "Add initial file"
 git push -u origin main
-"""
+'''
 
