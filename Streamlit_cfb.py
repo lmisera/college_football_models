@@ -14,6 +14,7 @@ get_ipython().run_line_magic('pip', 'freeze > "requirements.txt"')
 # Set the week number
 week = 10
 
+st.title("TEST")
 st.write(f"AHHHHHHHHHH {week}")
 
 
