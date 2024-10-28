@@ -5,7 +5,6 @@
 
 
 #%pip install streamlit
-from streamlit_javascript  import st_javascript
 import streamlit as st
 import pandas as pd
 import os
