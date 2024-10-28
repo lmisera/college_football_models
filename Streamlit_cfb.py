@@ -1,38 +1,20 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[16]:
 
-
-import streamlit as st
-
-# Display title and message
-st.title("Streamlit Test")
-st.write("Hello, this is a test to see if Streamlit is working!")
-
-# Add a button
-if st.button("Click me!"):
-    st.write("Button clicked!")
-else:
-    st.write("Button not clicked yet.")
-
-
-# In[12]:
-
-
-"""
 
 #%pip install streamlit
 import streamlit as st
 import pandas as pd
 import os
 
-%pip freeze > "requirements.txt"
+get_ipython().run_line_magic('pip', 'freeze > "requirements.txt"')
 
 # Set the week number
 week = 10
 
-"""
+st.write(f"AHHHHHHHHHH {week}")
 
 
 # In[4]:
