@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[16]:
+# In[17]:
 
 
 #%pip install streamlit
@@ -9,18 +9,14 @@ import streamlit as st
 import pandas as pd
 import os
 
+get_ipython().run_line_magic('pip', 'freeze > "requirements.txt"')
 
 # Set the week number
 week = 10
 
-st.title("TEST")
-st.write(f"AHHHHHHHHHH {week}")
 
+# In[18]:
 
-# In[4]:
-
-
-"""
 
 # Set up directory and read in the data
 current_dir = os.path.dirname(__file__)
@@ -38,5 +34,9 @@ st.title(f'Week {week} games and predictions')
 # Selection box to choose game
 selected_game = st.selectbox('Game: ', df['game_for_list'])
 
-"""
+
+# In[ ]:
+
+
+
 
