@@ -32,20 +32,3 @@ st.title(f'Week {week} games and predictions')
 # Selection box to choose game
 selected_game = st.selectbox('Game: ', df['game_for_list'])
 
-
-# In[5]:
-
-
-#To push as .py file
-#jupyter nbconvert --to script "C:\Users\Lucas\OneDrive\python\College football\Streamlit application\Streamlit_cfb.ipynb"
-
-
-#To push a file to github via pycharm terminal
-#cd "C:\Users\Lucas\OneDrive\python\College football\Streamlit application"
-#git init
-#git remote remove origin
-#git remote add origin https://github.com/lmisera/cfb_predictions
-#git add "C:\Users\Lucas\OneDrive\python\College football\Streamlit application"
-#git commit -m "Add initial file"
-#git push -u origin main
-
