@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
+# In[12]:
 
 
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
+import plotly.graph_objects as go
 import os
+get_ipython().run_line_magic('pip', 'freeze > requirements.txt')
 
 week = 10
 
@@ -31,12 +32,6 @@ st.title(f'Week {week} games and predictions')
 
 #Selection box to choose game
 selected_game = st.selectbox('Game: ', df['game_for_list'])
-
-
-# In[7]:
-
-
-get_ipython().run_line_magic('pip', 'freeze > requirements.txt')
 
 
 # In[ ]:
