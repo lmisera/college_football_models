@@ -1,17 +1,18 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[32]:
+# In[33]:
 
 
-import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 import os
-#%pip install pipreqs
-pipreqs r"C:/Users/Lucas/OneDrive/python/College football/Streamlit application"
+import streamlit as st
+#%pip freeze > requirements.txt
 
-week = 10
+# Set up Dash app
+app = dash.Dash(__name__)
+app.title = f"Week {10} Games and Predictions"
 
 
 # In[6]:
