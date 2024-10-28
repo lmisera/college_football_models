@@ -226,4 +226,3 @@ yarg==0.1.9
 yarl==1.9.4
 yfinance==0.2.40
 zipp==3.20.2
-streamlit_javascript=0.1.5
