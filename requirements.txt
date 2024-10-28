@@ -157,8 +157,6 @@ pydantic==2.7.1
 pydantic_core==2.18.2
 pydeck==0.9.1
 Pygments==2.16.1
-pymc==5.17.0
-pymc3==3.11.6
 PyMuPDF==1.23.15
 PyMuPDFb==1.23.9
 pyparsing==3.1.2
