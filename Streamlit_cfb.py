@@ -1,14 +1,16 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[12]:
+# In[28]:
 
 
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 import os
-get_ipython().run_line_magic('pip', 'freeze > requirements.txt')
+#%pip install pipreqs
+import pipreqs
+#pipreqs > "C:/Users/Lucas/OneDrive/python/College football/Streamlit application/requirements.txt"
 
 week = 10
 
