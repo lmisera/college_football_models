@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[6]:
 
+
+import streamlit as st
 
 st.title("Streamlit Test")
 st.write("Hello, this is a test to see if Streamlit is working!")
@@ -14,7 +16,7 @@ else:
     st.write("Button not clicked yet.")
 
 
-# In[1]:
+# In[3]:
 
 
 """
@@ -29,7 +31,7 @@ week = 10
 """
 
 
-# In[35]:
+# In[4]:
 
 
 """
@@ -51,7 +53,7 @@ selected_game = st.selectbox('Game: ', df['game_for_list'])
 """
 
 
-# In[ ]:
+# In[5]:
 
 
 #To push as .py file
