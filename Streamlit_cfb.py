@@ -9,7 +9,6 @@ import streamlit as st
 import pandas as pd
 import os
 
-#%pip freeze > "requirements.txt"
 
 # Set the week number
 week = 10
