@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[17]:
+# In[21]:
 
 
 #%pip install streamlit
+from streamlit_javascript  import st_javascript
 import streamlit as st
 import pandas as pd
 import os
@@ -126,7 +127,7 @@ if int(home_moneyline)>0:
 else:
     home_moneyline = str(int(home_moneyline))
 
-if (prediction>.5 and lower>.5) or (prediction<.5 and lower<.5):
+if (prediction>.5 and lower>.5) or (prediction<.5 and upper<.5):
     st.html(f"<p>{home_team} ({home_moneyline}) has a <b><span style='font-size:125%;'>{prediction:.0%}</span></b> chance of winning, with a lower-bound estimate of <span style='color:red;'>{lower:.0%}</span> and an upper-bound estimate of <span style='color:green;'>{upper:.0%}</span>.</p>")
 else:
     st.html(f"<p>This game is projected as a <b><span style='font-size:125%;'>toss-up</span></b>.</p>")
